@@ -31,7 +31,7 @@ useEffect(() => {
   const SearchItem = async () => {
     if (search) {
       const exercisesData = await fetchData(
-        `https://exercisedb.p.rapidapi.com/exercises`,
+        "https://exercisedb.p.rapidapi.com/exercises",
         exerciseOptions
       );
      console.log(exercisesData);
@@ -78,7 +78,7 @@ useEffect(() => {
         </div>
       </div>
       <HorizontalScrollbar data={bodyParts} />
-      <ExerciseTech exercises={exercises}/>
+      {/* <ExerciseTech exercises={exercises}/> */}
   
          
        
