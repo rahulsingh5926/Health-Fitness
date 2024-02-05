@@ -32,7 +32,7 @@ function BMI() {
         resultMessage = "- Your BMI falls in Overweight Range";
       }
 
-      setResult(`${BMI} ${resultMessage}`);
+      setResult({BMI} +{resultMessage});
       setFeet("");
       setWeight("");
       setInch("");
@@ -43,7 +43,7 @@ function BMI() {
 
   return (
     <div className="grid lg:grid-cols-2 lg:grid-rows-1 sm:grid-rows-2 gap-1 p-4 place-items-center list ">
-      <div >
+      <div>
         <p style={{ fontSize: "clamp(30px, 5vw, 35px)" }}>Calculate Your BMI</p>
         <hr />
         <p className="mt-9 mb-2 text-1xl">Weight</p>
@@ -78,9 +78,10 @@ function BMI() {
       </div>
       <img
         className="lg:w-4/6 sm:w-full lg:rounded-tl-3xl "
-        alt=""
+        alt="fitness_Gym"
         src="fitness_Gym.jpg"
       />
+     
     </div>
   );
 }

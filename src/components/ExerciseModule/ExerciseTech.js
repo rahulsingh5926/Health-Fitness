@@ -6,9 +6,9 @@ function ExerciseTech({ exercises }) {
 
   return (
     <>
-      <div className="flex justify-around flex-wrap" type="button">
+      <div className="flex justify-around flex-wrap relative m-4" type="button">
 
-          {/* {exercises.map((item) => (
+          {exercises.map((item) => (
             <Link
               to={`/ExerciseDetail/${item.id}`}
               key={item.id}
@@ -29,7 +29,7 @@ function ExerciseTech({ exercises }) {
               </div>
             </Link>
           ))}
-     */}
+    
       </div>
     </>
   );

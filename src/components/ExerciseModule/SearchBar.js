@@ -3,7 +3,15 @@ import { exerciseOptions, fetchData } from "./fetchData";
 import HorizontalScrollbar from "./HorizontalScrollbar";
 import ExerciseDetail from "./ExerciseDetail";
 import ExerciseTech from "./ExerciseTech";
+import { RingLoader } from "react-spinners";
 function SearchBar() {
+   const [loading, setLoading] = useState(true);
+
+  //  const override = `
+  //    display: block;
+  //    margin: 0 auto;
+  //    border-color: red;
+  //  `;
 
   const [exercises, setExercises] = useState([]);
   const[bodyParts,setBodyParts]=useState([]);
@@ -36,14 +44,16 @@ useEffect(() => {
       );
      console.log(exercisesData);
       const searchedExcercises = exercisesData.filter(
-        (exercise) =>
+        (exercise) =>{
+          return (
           exercise.name.toLowerCase().includes(search) ||
           exercise.target.toLowerCase().includes(search) ||
           exercise.equipment.toLowerCase().includes(search) ||
-          exercise.bodyPart.toLowerCase().includes(search)
-      )
+          exercise.bodyPart.toLowerCase().includes(search));
+        })
       setSearch('');
       setExercises(searchedExcercises);
+      setLoading(false);
     }
   };
   return (
@@ -56,7 +66,7 @@ useEffect(() => {
           You Should Know
         </p>{" "}
         {/* mb-8 for some margin at the bottom */}
-        <div className="flex items-center justify-center m-2">
+        {/* <div className="flex items-center justify-center m-2">
           <div className="rounded-lg bg-gray-200 p-2 sm:w-3/4 lg:w-1/2 ">
             <div className="flex">
               <input
@@ -75,15 +85,12 @@ useEffect(() => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <HorizontalScrollbar data={bodyParts} />
-      {/* <ExerciseTech exercises={exercises}/> */}
-  
-         
-       
-      </div>
-   
+      { exercises && <ExerciseTech exercises={exercises} />}
+      
+    </div>
   );
 }
 export default SearchBar;

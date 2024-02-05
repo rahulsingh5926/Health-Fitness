@@ -26,9 +26,9 @@ function Footer() {
           <h3>Connect us on</h3>
 
           <img alt="instagram" src="/instagram.png" style={{ width: "4vw" }} />
-          <img alt="instagram" src="/twitter.png" style={{ width: "4vw" }} />
-          <img alt="instagram" src="/whatsapp.png" style={{ width: "4vw" }} />
-          <img alt="instagram" src="/telegram.png" style={{ width: "4vw" }} />
+          <img alt="twitter" src="/twitter.png" style={{ width: "4vw" }} />
+          <img alt="whatsapp" src="/whatsapp.png" style={{ width: "4vw" }} />
+          <img alt="telegram" src="/telegram.png" style={{ width: "4vw" }} />
         </div>
       </div>
 

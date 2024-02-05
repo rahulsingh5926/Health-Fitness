@@ -13,12 +13,12 @@ const Navbar = () => {
           <Link to="/" className="nav-link">
             Home
           </Link>
-          <Link to="/about" className="nav-link">
+          {/* <Link to="/about" className="nav-link">
             About
           </Link>
-          <Link to="/contact" className="nav-link">
+          <Link to="/" className="nav-link">
             Contact
-          </Link>
+          </Link> */}
           <div className="dropdown">
             <span className="nav-link">Services</span>
             <div className="dropdown-content">

@@ -119,20 +119,6 @@ hr{
   margin-bottom: 30px;
 }
 
-.cta-button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  background-color: #ff5722;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #e64a19;
-}
 /* navbar */
 /* Navbar Styling */
 .navbar {

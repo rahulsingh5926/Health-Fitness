@@ -5,12 +5,11 @@ import BMI from './BMI';
 function Home() {
   return (
     <>
-      <section className=" grid lg:grid-cols-2 lg:grid-rows-1 sm:grid-rows-2 place-items-center  gap-2 p-4 mt-20" >
+      <section className=" grid lg:grid-cols-2 lg:grid-rows-1 sm:grid-rows-2 place-items-center  gap-2 p-4 mt-20">
         <img
           className="lg:rounded-br-3xl lg:w-4/5 sm:w-full"
           alt="Man Fitness"
           src="man-fitness.jpg"
-          
         />
         <div>
           <div>
@@ -31,7 +30,9 @@ function Home() {
             </p>
           </div>
           <div className="mt-2">
-            <button className="cta-button ">Get Started</button>
+            <p className=" border p-2 inline bg-orange-600 font-bold text-white rounded-lg  ">
+              Get Started
+            </p>
           </div>
         </div>
       </section>
