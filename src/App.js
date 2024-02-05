@@ -14,7 +14,6 @@ import Home from "./components/Home";
 import BMI from "./components/BMI";
 import Nutrition from "./components/Nutrition";
 
-import Fitness from "./components/Fitness";
 import Training from "./components/ExerciseModule/Training";
 import ExerciseDetail from "./components/ExerciseModule/ExerciseDetail";
 
